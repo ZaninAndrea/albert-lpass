@@ -47,7 +47,7 @@ def getBestMatches(query):
               for result in results]
     ratios.sort(key=lambda ratio: ratio[1])
     ratios.reverse()
-    best_ratios = [ratio for ratio in ratios[:4] if ratio[1] > 85]
+    best_ratios = [ratio for ratio in ratios if ratio[1] > 85]
 
     items = []
     for match in best_ratios:
